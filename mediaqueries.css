@@ -1,0 +1,99 @@
+
+@media (max-width: 768px) {
+    
+    #CV {
+        padding-top:3em;
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center; 
+
+      }
+    
+    section {
+        padding: 2rem;
+    }
+    
+
+    .DTnavlinks {
+        display: none;
+    }
+
+    .proj {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.2em;
+    }
+    .cvicon {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.2em;
+        padding:11em;
+        
+    }
+
+    .skills {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 0.5rem; 
+    }
+
+    .skill {
+        flex: 1 1 50%; 
+        max-width: 70px; 
+    }
+
+    .skills img {
+        max-width: 70px;
+    }
+
+    
+    .profilepicture, .projicon, .cvicon {
+        width: 200px;
+        height: 200px;
+    }
+    .pleasealignproperlylol{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .projicon img {
+        max-width: 220px;
+        max-height: auto;
+    }
+
+    .title, .titleSkills, .titleProjects, .titleCV, .titleContact {
+        font-size: 1.5rem;
+    }
+
+    .projDetails {
+        font-size: 1rem;
+        text-align: center; 
+        width:10em;
+        border-left:none;
+        border-top: 2px solid #000; 
+    }
+
+    .projicon {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center; 
+    }
+
+    .skillstext {
+        flex-direction: row;
+        flex-wrap: wrap; 
+        text-align:left;
+      }
+    
+      .skill-text {
+        width: 50%; 
+      }
+    .contactwrapper{
+        margin:0;
+    }
+}
