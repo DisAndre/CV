@@ -293,3 +293,40 @@ section {
 .cvicon img:hover {
     transform: scale(1.1);
 }
+
+.skillstext {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    margin-top: 1rem;
+    text-align:center;
+    justify-content: center;
+    align-items:center;
+    border-top: 2px solid #000; 
+    padding: 1rem; 
+
+  }
+  
+  .skill-text {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .plus-icon {
+    margin-right: 1rem; 
+  }
+
+  .contactwrapper {
+    border: 2px solid #000; 
+    padding: 1rem;
+    margin-left: 7em;
+    margin-right:7em;
+    border-radius:1em;
+    background: linear-gradient(to bottom, white, lightblue);
+}
+  .skillswrapper{
+    border: 2px solid #000; 
+    padding: 1rem; 
+    border-radius:1em;
+    background: linear-gradient(to top, white, lightblue);
+  }
