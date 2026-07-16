@@ -1,5 +1,6 @@
 const toTopBtn = document.querySelector(".toTop");
 const toggleTheme = document.querySelector(".toggleThemeBtn");
+const gitIcon = document.querySelector(".githubicon img");
 
 window.onscroll = function() {
     if (document.documentElement.scrollTop > 20) {
@@ -26,9 +27,13 @@ toggleTheme.addEventListener("click", function() {
         toggleTheme.style.background = "white";
         toTopBtn.style.background = "white";
         localStorage.setItem("theme", "dark");
+
+        gitIcon.src = "ASSETS/icons/githubiconWhite.png";
     } else {
         toggleTheme.textContent = "Dark Mode";
         localStorage.setItem("theme", "light");
+
+        gitIcon.src = "ASSETS/icons/githubicon.png";
     }
 });
 
