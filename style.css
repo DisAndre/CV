@@ -39,6 +39,7 @@ p {
     height: 50px;
     z-index: 999;
     background-color: transparent;
+    border:none;
 }
 
 .toTop img {
@@ -46,22 +47,37 @@ p {
     height: 100%;
 }
 
+.toggleThemeBtn{
+    position: fixed;
+    cursor: pointer;
+    bottom: 75px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    background-color: transparent;
+    border-radius:50%;
+}
+
 /* Desktop navigation bar */
 nav, .DTnavlinks {
     display: flex;
+    background: linear-gradient(to top, white, lightblue);
+    align-items: center;
 }
 
-nav {
+#fontnavbar {
+    display:flex;
+    flex:1;
     justify-content: center;
-    align-items: center;
     height: 10vh;
-    background: linear-gradient(to top, white, lightblue);
 }
 
 .DTnavlinks {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+    background:none;
 }
 
 a {
@@ -330,3 +346,20 @@ section {
     border-radius:1em;
     background: linear-gradient(to top, white, lightblue);
   }
+
+  .toggleThemeBtn{
+    z-index: 1000;
+  }
+
+  /* Dark Mode Stylings */
+
+  body.darkMode{
+    background: linear-gradient(to bottom, #111827, #1f2937);
+    color: #ffffff;
+  }
+
+  body.darkMode .skillswrapper, .proj, .contactwrapper, .cvicon, .aboutMeText, #desktopNavigationmenu{
+    background: linear-gradient(to top, rgb(49, 4, 4), rgb(3, 16, 21))
+  }
+
+  
