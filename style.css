@@ -218,7 +218,7 @@ section {
     font-weight: bold;
     color: #000000;
     list-style-type: none;
-    border-left: 2px solid #000; 
+    border-left: 2px solid #000000; 
     padding: 2rem; 
 }
 
@@ -264,7 +264,7 @@ section {
     margin-bottom: 1rem;
 }
 
-.cvicon p1 {
+.cvicon p {
     font-size: 1.2rem;
     font-weight: bold;
     color: #000;
@@ -272,7 +272,7 @@ section {
     text-decoration: underline;
 }
 
-.cvicon p1:hover {
+.cvicon p:hover {
     color: #0056b3;
 }
 
@@ -358,8 +358,26 @@ section {
     color: #ffffff;
   }
 
-  body.darkMode .skillswrapper, .proj, .contactwrapper, .cvicon, .aboutMeText, #desktopNavigationmenu{
+  body.darkMode .skillswrapper,
+  body.darkMode .proj,
+  body.darkMode .contactwrapper,
+  body.darkMode .cvicon,
+  body.darkMode .aboutMeText,
+  body.darkMode #desktopNavigationmenu{
     background: linear-gradient(to top, rgb(49, 4, 4), rgb(3, 16, 21))
   }
-
   
+
+  body.darkMode .aboutMeParagraph,
+  body.darkMode .title,
+  body.darkMode .DTnavlinks a,
+  body.darkMode .projDetails,
+  body.darkMode .cvDownloadText{
+    color:#ffffff;
+  }
+
+  body.darkMode .projDetails{
+    border-left: 2px solid #ffffff;
+  }
+
+
