@@ -37,3 +37,23 @@ toggleTheme.addEventListener("click", function() {
     }
 });
 
+//greetings
+const greetings = ["Salutations!", "Hello!", "Welcome!", "Hi There!"];
+const target = document.querySelector(".title");
+
+let greeting = 0;
+let letter = 0;
+
+function type() {
+  target.textContent = greetings[greeting].slice(0, letter++);
+
+  if (letter > greetings[greeting].length + 10) {
+    greeting = (greeting + 1) % greetings.length;
+    letter = 0;
+  }
+
+  //timer interval
+  setTimeout(type, 100);
+}
+
+type();
